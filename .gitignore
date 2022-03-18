@@ -1,0 +1,12 @@
+# DGD Manifest files
+.root
+dgd.config
+state/*
+wafer
+websocket-to-tcp-tunnel
+dgd
+log/*
+skotos.database
+skotos.database.old
+.repos/**
+run_gables.sh
