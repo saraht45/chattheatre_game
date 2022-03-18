@@ -10,7 +10,7 @@
         "dump_file": "skotos.database"
     },
     "goods": [
-        "https://raw.githubusercontent.com/saraht45/base-game-plugin/base-game-plugin.goods"
+        "https://raw.githubusercontent.com/saraht45/base-game-plugin/main/base-game-plugin.goods"
     ],
     "unbundled_goods": [
         {
