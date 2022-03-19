@@ -16,8 +16,8 @@
         {
             "name": "SkotOS",
             "git": {
-                "url": "https://github.com/ChatTheatre/SkotOS.git",
-                "branch": "master"
+                "url": "https://github.com/saraht45/SkotOS.git",
+                "branch": "gables-removed"
             },
             "paths": {
                 "skoot": "."
