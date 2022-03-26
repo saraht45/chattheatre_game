@@ -9,9 +9,6 @@
         "ports": [11099, 11017, 11070, 11071, 11080, 11089, 11090, 11091, 11443],
         "dump_file": "skotos.database"
     },
-    "goods": [
-        "https://raw.githubusercontent.com/ChatTheatre/base-game-plugin/main/base-game-plugin.goods"
-    ],
     "unbundled_goods": [
         {
             "name": "SkotOS",
