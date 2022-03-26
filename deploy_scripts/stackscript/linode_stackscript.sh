@@ -452,25 +452,25 @@ crontab -u skotos ~skotos/crontab.txt
 # 8. Patch built-in Orchil
 ####
 
-cat >/var/skotos/skoot/usr/ChatTheatre/data/www/profiles.js <<EndOfMessage
-"use strict";
-// orchil/profiles.js
-var profiles = {
-        "portal_chattheatre":{
-                "method":   "websocket",
-                "protocol": "wss",
-                "web_protocol": "https",
-                "server":   "$FQDN_CLIENT",
-                "port":      11810,
-                "woe_port":  11812,
-                "http_port": 11803,
-                "path":     "/chattheatre",
-                "extra":    "",
-                "reports":   false,
-                "chars":    true,
-        }
-};
-EndOfMessage
+#cat >/var/skotos/skoot/usr/ChatTheatre/data/www/profiles.js <<EndOfMessage
+#"use strict";
+#// orchil/profiles.js
+#var profiles = {
+ #       "portal_chattheatre":{
+   #             "method":   "websocket",
+  #              "protocol": "wss",
+  #              "web_protocol": "https",
+  #              "server":   "$FQDN_CLIENT",
+  #              "port":      11810,
+  #              "woe_port":  11812,
+  #              "http_port": 11803,
+   #             "path":     "/chattheatre",
+   #             "extra":    "",
+   #             "reports":   false,
+   #             "chars":    true,
+  #      }
+#};
+#EndOfMessage
 
 ####
 # Set up client redirect to the root URL goes to character creation
