@@ -4,9 +4,9 @@
 # SUBDOMAIN=
 # <UDF name="userpassword" label="Deployment User Password" example="Password for various accounts and infrastructure." />
 # USERPASSWORD=
-# <UDF name="game_git_url" label="The Game's Git URL" default="https://github.com/ChatTheatre/base_game" example="Game Git URL to clone for your game." optional="false" />
+# <UDF name="game_git_url" label="The Game's Git URL" default="https://github.com/ChatTheatre/chattheatre_game" example="Game Git URL to clone for your game." optional="false" />
 # GAME_GIT_URL=
-# <UDF name="game_git_branch" label="The Game's Git Branch" default="master" example="Game branch, tag or commit to clone for your game." optional="false" />
+# <UDF name="game_git_branch" label="The Game's Git Branch" default="main" example="Game branch, tag or commit to clone for your game." optional="false" />
 # GAME_GIT_BRANCH=
 # <UDF name="skotos_git_url" label="Skotos Git URL" default="https://github.com/ChatTheatre/SkotOS" example="SkotOS Git URL to clone for your game." optional="false" />
 # SKOTOS_GIT_URL=
