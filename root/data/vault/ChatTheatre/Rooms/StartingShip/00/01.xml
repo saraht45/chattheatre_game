@@ -1,0 +1,98 @@
+<object clone="/base/obj/thing" owner="bobo">
+  <Base:Thing>
+    <Ur:UrObject urobject="OBJ(ChatTheatre:Rooms:StartingShip:UrShipOutside)"/>
+    <Base:Bulk immobile="false" mass="1" density="1"/>
+    <Base:Container flexible="false" transparent-container="false" public-container="false" tight="false" capacity="1" maxweight="1"/>
+    <Base:Misc gender="neuter" volition="false" weapon="false" default_stance="none" combinable="false" discrete="false" by_weight="false" tight="false" scriptrunner="false">
+      <Base:Edible value="false"/>
+      <Base:Potable value="false"/>
+      <Base:DrinkMessageFirst/>
+      <Base:DrinkMessageThird/>
+      <Base:Transparency value="false"/>
+      <Base:Unsafe value="false"/>
+      <Base:Safe value="false"/>
+      <Base:ClothesExpected value="false"/>
+      <Base:DieMessageFirst/>
+      <Base:DieMessageThird/>
+    </Base:Misc>
+    <Base:Details>
+      <Base:Detail id="default" prime="true" def="true" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames/>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="bigmapurl">
+             <mapurl cat="StartShip">0/00.png</mapurl>
+          </Base:Description>
+          <Base:Description type="brief">
+             the quarterdeck of the ship
+          </Base:Description>
+          <Base:Description type="examine">
+             The quarterdeck of the ship. <show-exits/>
+          </Base:Description>
+          <Base:Description type="glance">
+             The quarterdeck of the ship. <show-exits/>
+          </Base:Description>
+          <Base:Description type="look">
+             The quarterdeck of the ship. <show-exits/>
+          </Base:Description>
+          <Base:Description type="mapurl">
+             <mapurl cat="StartShip">0/01.png</mapurl>
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="exit-northeast" prime="false" def="false" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="northeast"/>
+          </Base:SNames>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions/>
+        <Base:Exit dest="NREF(ChatTheatre:Rooms:StartingShip:00:02|exit-northwest)" door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false">
+          <Base:Direction dir="northeast"/>
+        </Base:Exit>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="exit-southeast" prime="false" def="false" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="southeast"/>
+          </Base:SNames>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions/>
+        <Base:Exit dest="NREF(ChatTheatre:Rooms:StartingShip:00:02|exit-southwest)" door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false">
+          <Base:Direction dir="southeast"/>
+        </Base:Exit>
+        <Base:Climbable/>
+      </Base:Detail>
+    </Base:Details>
+    <Base:Clothing>
+      <Base:SingleWear value="false"/>
+    </Base:Clothing>
+    <Base:Crafting see_level="0" do_level="0" time="0" attention="false" held="false">
+      <Base:Ingredients/>
+      <Base:Tools/>
+      <Base:CraftVerbs/>
+    </Base:Crafting>
+    <Base:InitialContents/>
+    <Base:InitialProperties/>
+    <Core:Properties>
+      <Core:Property property="revisions">
+         (\{ 1144052085, "-", "SYNC", 1647739036, "bobo", "E", 1647739150, "bobo", "E", 1647739237, "bobo", "E", 1647739257, "bobo", "E", 1647740151, "bobo", "K", 1647740498, "bobo", "K", 1647740640, "bobo", "K", 1647740987, "bobo", "K", 1647741079, "bobo", "K", 1647741282, "bobo", "K", 1647741360, "bobo", "K", 1647741436, "bobo", "E", 1647741460, "bobo", "E", 1647741529, "bobo", "E", 1647741539, "bobo", "K", 1647741653, "bobo", "K", 1647741657, "bobo", "E", 1647741665, "bobo", "K", 1647741896, "bobo", "E", 1647742250, "bobo", "E", 1647742265, "bobo", "E", 1647742267, "bobo", "E", 1647744521, "bobo", "K", 1647784250, "bobo", "K", 1647785051, "bobo", "K", 1647785288, "bobo", "K", 1647785650, "bobo", "E", 1647785655, "bobo", "K" \})
+      </Core:Property>
+      <Core:Property property="skill:fatigue">1.0</Core:Property>
+    </Core:Properties>
+    <Notes:Notes/>
+  </Base:Thing>
+</object>

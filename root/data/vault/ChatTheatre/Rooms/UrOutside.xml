@@ -1,0 +1,226 @@
+<object clone="/base/obj/thing" owner="bobo">
+  <Base:Thing>
+    <Ur:UrObject urobject="OBJ(ChatTheatre:Rooms:UrWorld)"/>
+    <Base:Bulk immobile="false" mass="1" density="2.5"/>
+    <Base:Container flexible="false" transparent-container="false" public-container="false" tight="false" capacity="113.2" maxweight="11320"/>
+    <Base:Misc gender="neuter" volition="false" weapon="false" default_stance="none" combinable="false" discrete="false" by_weight="false" tight="false" scriptrunner="false">
+      <Base:Edible value="false"/>
+      <Base:Potable value="false"/>
+      <Base:DrinkMessageFirst></Base:DrinkMessageFirst>
+      <Base:DrinkMessageThird></Base:DrinkMessageThird>
+      <Base:Transparency value="false"/>
+      <Base:Unsafe value="false"/>
+      <Base:Safe value="false"/>
+      <Base:ClothesExpected value="false"/>
+      <Base:DieMessageFirst></Base:DieMessageFirst>
+      <Base:DieMessageThird></Base:DieMessageThird>
+    </Base:Misc>
+    <Base:Details>
+      <Base:Detail id="default" prime="true" def="true" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames/>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">outside</Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="air" prime="false" def="true" abstract="true" hidden="false" luminosity="0" targetable_in_dark="true" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="air"/>
+          </Base:SNames>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the calm, warm air
+          </Base:Description>
+          <Base:Description type="look">
+             You cannot actually see the calm, warm air that fills the surrounding area.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="clouds" prime="false" def="true" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="cloud"/>
+          </Base:SNames>
+          <Base:PNames>
+            <Base:PName pname="clouds"/>
+          </Base:PNames>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the faint wisps of clouds overhead
+          </Base:Description>
+          <Base:Description type="look">
+             The faint wisps of clouds overhead.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="grass" prime="false" def="true" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="true" against="true" under="true" on="true" inside="true" near="true" over="true" behind="true" before="true" beside="true"/>
+        <Base:Names>
+          <Base:SNames/>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the freshly-sprouted green grass
+          </Base:Description>
+          <Base:Description type="look">
+             The freshly-sprouted green grass surrounding the area.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="ground" prime="false" def="true" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="true" against="true" under="true" on="true" inside="true" near="true" over="true" behind="true" before="true" beside="true"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="ground"/>
+            <Base:SName sname="earth"/>
+          </Base:SNames>
+          <Base:PNames>
+            <Base:PName pname="grounds"/>
+            <Base:PName pname="earths"/>
+          </Base:PNames>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the ground
+          </Base:Description>
+          <Base:Description type="look">
+             The ground beneath your feet.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="sky" prime="false" def="true" abstract="false" hidden="false" luminosity="500" targetable_in_dark="true" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="sky"/>
+          </Base:SNames>
+          <Base:PNames>
+            <Base:PName pname="skies"/>
+          </Base:PNames>
+        </Base:Names>
+        <Base:Adjectives>
+          <Base:Adjective adjective="night"/>
+        </Base:Adjectives>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the  brilliant blue sky
+          </Base:Description>
+          <Base:Description type="look">
+             The brilliant blue sky overhead.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="sun" prime="false" def="true" abstract="false" hidden="false" luminosity="5" targetable_in_dark="true" plural="false">
+        <Base:Preposition close="false" against="false" under="true" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="sun"/>
+            <Base:SName sname="moon"/>
+          </Base:SNames>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives>
+          <Base:Adjective adjective="bright"/>
+        </Base:Adjectives>
+        <Base:Descriptions>
+          <Base:Description type="brief">the sun</Base:Description>
+          <Base:Description type="look">
+             It is the sun.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="weather" prime="false" def="true" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="true" against="true" under="true" on="true" inside="true" near="true" over="true" behind="true" before="true" beside="true"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="weather"/>
+          </Base:SNames>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the weather
+          </Base:Description>
+          <Base:Description type="look">
+             The weather.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="wind" prime="false" def="true" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="true" against="true" under="true" on="true" inside="true" near="true" over="true" behind="true" before="true" beside="true"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="wind"/>
+            <Base:SName sname="breeze"/>
+          </Base:SNames>
+          <Base:PNames>
+            <Base:PName pname="winds"/>
+            <Base:PName pname="breezes"/>
+          </Base:PNames>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the warm, gentle breeze
+          </Base:Description>
+          <Base:Description type="look">
+             The warm, gentle breeze filling the surroundings. It is not something you can actually see.
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+    </Base:Details>
+    <Base:Clothing>
+      <Base:SingleWear value="false"/>
+    </Base:Clothing>
+    <Base:Crafting see_level="0" do_level="0" time="0" attention="false" held="false">
+      <Base:Ingredients/>
+      <Base:Tools/>
+      <Base:CraftVerbs/>
+    </Base:Crafting>
+    <Base:InitialContents/>
+    <Base:InitialProperties/>
+    <Core:Properties>
+      <Core:Property property="export:trait:outside">
+         1
+      </Core:Property>
+      <Core:Property property="revisions">
+         (\{ 1647807214, "bobo", "E", 1647807556, "bobo", "K", 1647807563, "bobo", "E", 1647807569, "bobo", "E", 1647807572, "bobo", "E", 1647807573, "bobo", "E", 1647807576, "bobo", "E", 1647807590, "bobo", "E", 1647807625, "bobo", "E", 1647807653, "bobo", "E", 1647807655, "bobo", "E", 1647807673, "bobo", "K" \})
+      </Core:Property>
+    </Core:Properties>
+    <Notes:Notes/>
+  </Base:Thing>
+</object>

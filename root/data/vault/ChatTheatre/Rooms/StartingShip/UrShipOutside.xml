@@ -1,0 +1,76 @@
+<object clone="/base/obj/thing" owner="SkotOS">
+  <Base:Thing>
+    <Ur:UrObject urobject="OBJ(ChatTheatre:Rooms:UrOutside)"/>
+    <Base:Bulk immobile="false" mass="1" density="1"/>
+    <Base:Container flexible="false" transparent-container="false" public-container="false" tight="false" capacity="1" maxweight="1"/>
+    <Base:Misc gender="neuter" volition="false" weapon="false" default_stance="none" combinable="false" discrete="false" by_weight="false" tight="false" scriptrunner="false">
+      <Base:Edible value="false"/>
+      <Base:Potable value="false"/>
+      <Base:DrinkMessageFirst/>
+      <Base:DrinkMessageThird/>
+      <Base:Transparency value="false"/>
+      <Base:Unsafe value="false"/>
+      <Base:Safe value="false"/>
+      <Base:ClothesExpected value="false"/>
+      <Base:DieMessageFirst/>
+      <Base:DieMessageThird/>
+    </Base:Misc>
+    <Base:Details>
+      <Base:Detail id="grass" prime="false" def="false" abstract="false" hidden="true" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames/>
+          <Base:PNames/>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions/>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+      <Base:Detail id="ground" prime="false" def="false" abstract="false" hidden="false" luminosity="0" targetable_in_dark="false" plural="false">
+        <Base:Preposition close="false" against="false" under="false" on="false" inside="false" near="false" over="false" behind="false" before="false" beside="false"/>
+        <Base:Names>
+          <Base:SNames>
+            <Base:SName sname="floor"/>
+            <Base:SName sname="ground"/>
+          </Base:SNames>
+          <Base:PNames>
+            <Base:PName pname="floors"/>
+            <Base:PName pname="grounds"/>
+          </Base:PNames>
+        </Base:Names>
+        <Base:Adjectives/>
+        <Base:Descriptions>
+          <Base:Description type="brief">
+             the $(this.trait:floor:color) $(this.trait:floor:material) floor
+          </Base:Description>
+          <Base:Description type="look">
+             The floor underfoot is composed entirely of $(this.trait:floor:color) $(this.trait:floor:material). $(this.trait:floor:feature)
+          </Base:Description>
+        </Base:Descriptions>
+        <Base:Exit door="false" closed="false" locked="false" never_obvious="false" obvious_when_open="false" hidden_when_closed="false" separate="false" self-locking="false" deadbolt="false"/>
+        <Base:Climbable/>
+      </Base:Detail>
+    </Base:Details>
+    <Base:Clothing>
+      <Base:SingleWear value="false"/>
+    </Base:Clothing>
+    <Base:Crafting see_level="0" do_level="0" time="0" attention="false" held="false">
+      <Base:Ingredients/>
+      <Base:Tools/>
+      <Base:CraftVerbs/>
+    </Base:Crafting>
+    <Base:InitialContents/>
+    <Base:InitialProperties/>
+    <Core:Properties>
+      <Core:Property property="export:trait:floor:material">
+         "hardwood"
+      </Core:Property>
+      <Core:Property property="revisions">
+         (\{ 1144052085, "-", "SYNC", 1647739036, "bobo", "E", 1647739150, "bobo", "E", 1647739249, "bobo", "E", 1647807733, "bobo", "K", 1647807738, "bobo", "E", 1647807740, "bobo", "E", 1647807745, "bobo", "E", 1647807747, "bobo", "E", 1647807813, "bobo", "K", 1647807835, "bobo", "E", 1647807845, "bobo", "E", 1647807868, "bobo", "E" \})
+      </Core:Property>
+      <Core:Property property="skill:fatigue">1.0</Core:Property>
+    </Core:Properties>
+    <Notes:Notes/>
+  </Base:Thing>
+</object>
