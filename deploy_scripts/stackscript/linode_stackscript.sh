@@ -339,7 +339,7 @@ upstream skotosdgd {
 server {
     listen *:11810;
     server_name $FQDN_CLIENT;
-    location /chatteatre {
+    location /chattheatre {
       proxy_pass http://chattheatre-ws;
       proxy_pass_request_headers on;
       proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
