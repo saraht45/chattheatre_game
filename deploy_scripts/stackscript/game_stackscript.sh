@@ -12,6 +12,10 @@
 # SKOTOS_GIT_URL=
 # <UDF name="skotos_git_branch" label="Skotos Git Branch" default="master" example="SkotOS branch, tag or commit to clone for your game." optional="false" />
 # SKOTOS_GIT_BRANCH=
+# <UDF name="skotos_game_name" label="Skotos Game Name" default="ChatTheatre" example="This is what your game will be called." optional="false" />
+# SKOTOS_GAME_NAME=
+# <UDF name="skotos_game_id" label="Skotos Game ID" default="ChatTheatre" example="This is the ID of your game and should not include spaces." optional="false" />
+# SKOTOS_GAME_ID=
 
 set -e
 set -x
@@ -103,27 +107,10 @@ sudo -u skotos -g skotos ~skotos/dgd_pre_setup.sh
 # But we also copy those files into /var/game/root (note: no dot) so that if the user later
 # rebuilds with dgd-manifest, the modified files will be kept.
 
-# Instance file
-sudo -u skotos -g skotos cat >/var/game/.root/usr/System/data/instance <<EndOfMessage
-portbase 11000
-hostname $FQDN_CLIENT
-login_hostname $FQDN_LOGIN
-bootmods DevSys Theatre Jonkichi Tool Generic SMTP ChatTheatre
-textport 443
-real_textport 11443
-webport 11803
-real_webport 11080
-url_protocol https
-access chattheatre
-memory_high 128
-memory_max 256
-statedump_offset 600
-freemote +emote
-EndOfMessage
 sudo -u skotos -g skotos mkdir -p /var/game/root/usr/System/data/
 sudo -u skotos -g skotos cp /var/game/.root/usr/System/data/instance /var/game/root/usr/System/data/
 
-sudo -u skotos -g skotos cat >/var/game/root/usr/ChatTheatre/data/www/profiles.js <<EndOfMessage
+sudo -u skotos -g skotos cat >/var/game/root/usr/$SKOTOS_GAME_ID/data/www/profiles.js <<EndOfMessage
 "use strict";
 // orchil/profiles.js
 var profiles = {
@@ -135,14 +122,14 @@ var profiles = {
                 "port":      11810,
                 "woe_port":  11812,
                 "http_port": 11803,
-                "path":     "/chattheatre",
+                "path":     "/$SKOTOS_GAME_ID",
                 "extra":    "",
                 "reports":   false,
                 "chars":    true,
         }
 };
 EndOfMessage
-sudo -u skotos -g skotos cp /var/game/root/usr/ChatTheatre/data/www/profiles.js /var/game/.root/usr/ChatTheatre/data/www/
+sudo -u skotos -g skotos cp /var/game/root/usr/$SKOTOS_GAME_ID/data/www/profiles.js /var/game/.root/usr/$SKOTOS_GAME_ID/data/www/
 
 sudo -u skotos -g skotos cat >~skotos/dgd_final_setup.sh <<EndOfMessage
 crontab ~/crontab.txt
