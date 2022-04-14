@@ -9,12 +9,6 @@
         "ports": [11099, 11017, 11070, 11071, 11080, 11089, 11090, 11091, 11443],
         "dump_file": "skotos.database"
     },
-    "goods": [
-        "https://raw.githubusercontent.com/ChatTheatre/nip-plugin/main/nip-plugin.goods",
-        "https://raw.githubusercontent.com/ChatTheatre/shared-plugin/main/shared-plugin.goods",
-        "https://raw.githubusercontent.com/ChatTheatre/effects-plugin/main/effects-plugin.goods",
-        "https://raw.githubusercontent.com/ChatTheatre/language-plugin/main/language-plugin.goods"
-    ],
     "unbundled_goods": [
         {
             "name": "SkotOS",
