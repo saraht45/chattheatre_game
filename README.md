@@ -21,3 +21,16 @@ You'll need to create three DNS entries immediately, right after you hit "create
 Your instance should be at least 2GB in size. Anything smaller can't support MariaDB, it dies from lack of memory.
 
 See https://ChatTheatre.github.io/SkotOS-Doc/setup_vps.html for troubleshooting tips and more details.
+
+
+
+
+
+KNOWN ISSUES:
+
+Update /etc/nginx/sites-available/skotos_game.conf
+- Searching for "/gables" and replace with "/ChatTheatre"
+- Restart nginx
+- This fixes the game client
+
+Update woe link on user dashboard. Replace gables with ChatTheatre
